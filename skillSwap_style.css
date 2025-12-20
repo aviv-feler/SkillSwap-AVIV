@@ -1,0 +1,315 @@
+/* Backround Style */
+body {
+  background-color: #cfcccc;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header בסיס */
+header {
+  background-color: #000;
+  padding: 15px 40px;
+  background-image: url("main_bg.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+/* Nav כ־Flex container */
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* לוגו */
+
+.logo {
+  color: #fff;
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.logo:hover {
+  color: #6200ff;
+}
+
+/* תפריט מרכזי */
+.menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: bold;
+}
+
+.menu-item {
+  margin: 0 1px;
+  
+}
+
+/* הופך את הלינקים בתפריט לכפתורים עם מסגרת */
+.menu-item a {
+  display: inline-block;
+  padding: 8px 12px;
+  border: 1.5px solid rgba(255, 255, 255, 0.65);
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.25); /* שקוף קל כדי שיבלוט על התמונה */
+  color: #fff;
+  text-decoration: none;
+  transition: background 0.2s, border-color 0.2s, transform 0.2s;
+}
+
+/* Hover - ברור שזה כפתור */
+.menu-item a:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: #fff;
+  transform: translateY(-1px);
+}
+
+
+.highlight a {
+  background-color: #fff;
+  color: #000;
+  border: 1.5px solid #fff;
+  padding: 8px 14px;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+.menu a:hover {
+  color: #6200ff;
+}
+
+/* צד ימין */
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile a {
+  color: #ddd;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+/* כפתור פעולה */
+.profile .cta {
+  background-color: #fff;
+  color: #000;
+  padding: 8px 14px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+.profile :hover {
+  color: #6200ff;
+}
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-image: url("bg_all.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+section {
+  margin-bottom: 60px;
+}
+.hero-video video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px 0;
+}
+
+.hero-video {
+  position: relative;
+  height: 520px;           /* אפשר לשנות */
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 60px;
+}
+
+/* הווידאו כ"רקע" */
+.bg-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;       /* חשוב! */
+}
+
+/* שכבה כהה מעל הווידאו כדי שהטקסט יהיה קריא */
+.hero-video::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  z-index: 1;
+}
+
+/* התוכן שמעל הווידאו */
+.hero-overlay {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;  /* אם תרצה באמצע: center */
+  padding: 60px;
+  color: #fff;
+  max-width: 700px;
+}
+
+.hero-overlay h1,
+.hero-overlay h2,
+.hero-overlay p {
+  color: #fff;
+}
+
+.hero-overlay h1 {
+  font-size: 48px;
+  margin: 0 0 10px 0;
+}
+
+.hero-overlay h2 {
+  font-size: 24px;
+  margin: 0 0 10px 0;
+  opacity: 0.9;
+}
+
+.hero-overlay p {
+  margin: 0 0 25px 0;
+  opacity: 0.9;
+}
+
+
+section h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #030303;
+}
+
+/* Buttons */
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: left;
+}
+
+.btn {
+  padding: 14px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary { 
+  background-color: #413f3f;
+  color: #f8f1f1;
+  border: 2px solid #fff;
+}
+
+.btn-secondary {
+  background-color: #413f3f;
+  color: #f8f1f1;
+  border: 2px solid #fff;
+}
+
+/* ===== BROWSE JOBS SECTION ===== */
+.browse-section {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.browse-section h2 {
+  font-size: 32px;
+  color: #030303;
+  margin-bottom: 25px;
+}
+
+/* Filter Navigation */
+.filter-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 12px;
+  padding: 0;
+  margin: 0 0 25px 0;
+  flex-wrap: wrap;
+}
+
+.filter-nav li a {
+  display: block;
+  padding: 10px 24px;
+  background-color: #f5f5f5;
+  color: #555;
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 15px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.filter-nav li a:hover {
+  background-color: #e8e8e8;
+  color: #333;
+}
+
+.filter-nav li a.active {
+  background-color: #6200ff;
+  color: #fff;
+  border-color: #6200ff;
+}
+
+/* Search Form */
+.search-form {
+  display: flex;
+  max-width: 500px;
+}
+
+.search-form input {
+  flex: 1;
+  padding: 14px 20px;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+  background-color: #fafafa;
+}
+
+.search-form input:focus {
+  border-color: #6200ff;
+  background-color: #fff;
+  box-shadow: 0 0 0 4px rgba(98, 0, 255, 0.1);
+}
+
+.search-form input::placeholder {
+  color: #999;
+}
