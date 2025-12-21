@@ -15,12 +15,12 @@
        <ul class="menu">
         <li class="menu-item"><a href="#">Explore</a></li>
         <li class="menu-item"><a href="#">My Jobs</a></li>
-        <li class="menu-item"><a href="#">Credits</a></li>
+        <li class="menu-item"><a href="#">My Credits</a></li>
         <li class="menu-item highlight"><a href="#">Post a Job +</a></li>
 </ul>
 
         <div class="profile">
-            <a href="#">Profile</a>
+            <a href="#" class="profile-icon">TN</a>
         </div>
     </nav>
 </header>
@@ -38,31 +38,14 @@
     <p>Your marketplace for exchanging services using credits.</p>
 
     <div class="hero-buttons">
-      <a href="#" class="btn btn-primary">Browse Jobs</a>
-      <a href="#" class="btn btn-secondary">Post a Job</a>
+      <a href="#" class="btn btn-primary">Post a Job</a>
     </div>
   </div>
 </section>
 
-    <!-- Hero Section -->
-    <section>
-        <h1>Trade Skills. Not Money.</h1>
-        <h2>Welcome to SkillSwap</h2>
-        <h3>Your marketplace for exchanging services using credits.</h3>
-        <p>
-            SkillSwap is a professional marketplace where freelancers exchange
-            services using credits instead of cash.
-        </p>
-        <div class="hero-buttons">
-            <a href="#" class="btn btn-primary">Browse Jobs</a>
-            <a href="#" class="btn btn-secondary">Post a Job</a>
-        </div>
-    </section>
 
     <!-- Filters Section -->
-    <section class="brows-section">
-        <h2>Browse Jobs</h2>
-
+    <section class="browse-section">
         <nav class="filter-nav">
             <ul>
                 <li><a href="#" class="active">All</a></li>
@@ -70,37 +53,58 @@
                 <li><a href="#">Fixing</a></li>
                 <li><a href="#">IT</a></li>
                 <li><a href="#">Writing</a></li>
+                <li>
+                    <form class="search-form">
+                        <input type="text" placeholder="🔍 Search jobs...">
+                    </form>
+                </li>
             </ul>
         </nav>
-
-        <form class="search-form">
-            <input type="text" placeholder="🔍 Search jobs...">
-        </form>
     </section>
 
-    <!-- Job Listings Section -->
-    <section class="job-listings">
+<!-- Job Listings Section -->
+<section class="job-listings">
 
-        <article class="job-card">
-            <div class="job-image">
-                <img src="logo_design.jpg" alt="Logo Design">
-            </div>
+  <article class="job-card">
+    <div class="job-image">
+      <img src="logo_design.jpeg" alt="Logo Design">
+    </div>
 
-        <article>
-            <h3>Fix Sink</h3>
-            <p>Category: Fixing</p>
-            <p>65 Credits</p>
-            <a href="#">View Job</a>
-        </article>
+    <div class="job-content">
+      <h3 class="job-title">Logo Design</h3>
+      <p class="job-meta">Category: Design</p>
+      <p class="job-credits">40 Credits</p>
+      <a href="#" class="job-link">View Job</a>
+    </div>
+  </article>
 
-        <article>
-            <h3>Setting Up Router</h3>
-            <p>Category: IT</p>
-            <p>30 Credits</p>
-            <a href="#">View Job</a>
-        </article>
+  <article class="job-card">
+    <div class="job-image">
+      <img src="fix_sink.jpeg" alt="Fix Sink">
+    </div>
 
-    </section>
+    <div class="job-content">
+      <h3 class="job-title">Fix Sink</h3>
+      <p class="job-meta">Category: Fixing</p>
+      <p class="job-credits">65 Credits</p>
+      <a href="#" class="job-link">View Job</a>
+    </div>
+  </article>
+
+  <article class="job-card">
+    <div class="job-image">
+      <img src="setting_router.jpeg" alt="Setting Up Router">
+    </div>
+
+    <div class="job-content">
+      <h3 class="job-title">Setting Up Router</h3>
+      <p class="job-meta">Category: IT</p>
+      <p class="job-credits">30 Credits</p>
+      <a href="#" class="job-link">View Job</a>
+    </div>
+  </article>
+
+</section>
 
 </main>
 
