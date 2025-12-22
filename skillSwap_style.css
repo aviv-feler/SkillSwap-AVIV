@@ -189,7 +189,7 @@ section {
   opacity: 0.85;
 }
 
-/* כפתור מקצועי, לא מוגזם */
+/* כפתור */
 .btn {
   display: inline-block;              
   transition: transform 0.2s, box-shadow 0.2s;
