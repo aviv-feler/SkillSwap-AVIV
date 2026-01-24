@@ -95,7 +95,7 @@ header nav {
 
 /* ===== Main ================================================================================================= */
 main {
-  max-width: 1800px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 40px 20px;
 }
@@ -529,6 +529,138 @@ footer {
    .footer-nav {
     flex-wrap: wrap;
   }
+}
+
+/* ===== My Credits page ======================================================================== */
+
+.creditsheader {
+  color: white;
+  text-align: center;
+  font-family: "Zalando Sans Expanded", sans-serif;
+  font-size: 48px;
+  margin-bottom: 40px;
+  font-weight: 400;
+}
+
+.credits-summary{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 30px 60px;
+  border: 1.5px solid rgb(35, 34, 34);
+  background-color: rgb(15, 16, 19);
+  border-radius: 15px;
+}
+
+.credinfo{
+  font-size: 16px;
+  font-weight: 300;
+  font-family: "Zalando Sans Expanded", sans-serif;
+  color: white;
+}
+
+.credinfo.divider{
+  border-right: 2px solid rgb(35, 34, 34);
+  padding-right: 40px;
+}
+
+.total-amount {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.trans-amount {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.positive {
+  color: rgb(70, 173, 70); /* ירוק */
+}
+
+.negative {
+  color: rgb(162, 13, 13); /* אדום */
+}
+
+.buybtn {
+  margin-left: auto;
+  font-family: "Zalando Sans Expanded", sans-serif;
+  font-size: 20px;
+  padding: 10px 30px;
+  border-radius: 8px;
+  font-weight: 400;
+  background: #fff;
+  color: #000;
+  width: 250px;
+}
+
+.buybtn:hover {
+  background: rgba(255,255,255,0.75);
+  color: white;
+}
+
+.transactions {
+  margin-top: 80px;
+}
+
+.transactions-title {
+  color: white;
+  font-family: "Zalando Sans Expanded", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.transactions-list {
+  background-color: rgb(15, 16, 19);
+  border: 1.5px solid rgb(35, 34, 34);
+  border-radius: 16px;
+}
+
+/* שורה */
+.transaction {
+  display: flex;
+  align-items: center;
+  padding: 20px 30px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.transaction:last-child {
+  border-bottom: none;
+}
+
+.t-left {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.t-desc {
+  color: white;
+  font-family: "Zalando Sans Expanded", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.t-meta {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "Zalando Sans Expanded", sans-serif;
+  font-size: 14px;
+}
+
+.t-amount {
+  margin-left: auto;
+  font-family: "Zalando Sans Expanded", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.t-amount.positive {
+  color: rgb(90, 220, 120);
+}
+
+.t-amount.negative {
+  color: rgb(255, 90, 90);
 }
 
 
