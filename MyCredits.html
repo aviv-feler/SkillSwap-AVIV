@@ -14,12 +14,12 @@
 
 <header>
     <nav>
-        <a href="Home_Page.html" class="logo">SkillSwap</a>
+        <a href="index.html" class="logo">SkillSwap</a>
 
        <ul class="menu">
-        <li class="menu-item"><a href="#">Explore</a></li>
+        <li class="menu-item"><a href="index.html">Explore</a></li>
         <li class="menu-item"><a href="#">My Jobs</a></li>
-        <li class="menu-item"><a href="#">My Credits</a></li>
+        <li class="menu-item"><a href="MyCredits.html">My Credits</a></li>
         
 </ul>
 
@@ -34,7 +34,7 @@
     <section class="credits-summary">
         <div class="credinfo divider">
             Total Credits:
-            <div class="total-amount">110</div>
+            <div id="totalAmount" class="total-amount">0</div>
         </div>
         <div class="credinfo">
             Transactions within the last 30 days:
@@ -118,6 +118,17 @@
     <p class="footer-copy">© SkillSwap 2025</p>
 
 </footer>
+
+<script>
+    let total = 0;
+    let amounts = document.getElementsByClassName("t-amount");
+
+    for (let i = 0; i < amounts.length; i++) {
+      total += parseInt(amounts[i].innerText);
+    }
+
+    document.getElementById("totalAmount").innerText = total;
+</script>
 
 </body>
   </html>
