@@ -529,6 +529,81 @@ footer {
    .footer-nav {
     flex-wrap: wrap;
   }
+
+  /* ===== My Credits page - Media Responsive ======================= */
+    .creditsheader {
+    font-size: 36px;
+    text-align: center;
+    margin: 30px 0 18px;
+  }
+
+    .credits-summary{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+    padding: 24px 18px;
+  }
+
+  .credits-summary .credinfo.divider{
+    width: 100%;
+    max-width: none;
+    display: block;
+    border: none;
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+    margin: 0;
+    margin-bottom: 18px;
+    padding: 0;
+    padding-bottom: 18px;
+  }
+
+  .credits-summary .credinfo{
+    width: 100%;
+    display: block;
+  }
+
+  .credits-summary .buybtn{
+    width: 80%;
+    max-width: 320px;
+    display: block;
+    margin: 0 auto;
+    padding: 14px 16px;
+    border-radius: 12px;
+    position: static;
+    align-self: center;
+  }
+
+  .transactions-list{
+    border-radius: 16px;
+  }
+
+  .transaction{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 18px 16px;
+  }
+
+  .t-left{
+    width: 100%;
+    gap: 6px;
+  }
+
+  .t-desc{
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .t-meta{
+    font-size: 14px;
+  }
+
+  .t-amount{
+    margin-left: 0;
+    font-size: 22px;
+    line-height: 1.1;
+  }
 }
 
 /* ===== My Credits page ======================================================================== */
@@ -617,7 +692,6 @@ footer {
   border-radius: 16px;
 }
 
-/* שורה */
 .transaction {
   display: flex;
   align-items: center;
