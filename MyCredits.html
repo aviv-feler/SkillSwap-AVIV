@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SkillSwap - My Credits</title>
-    <link rel="stylesheet" href="skillSwap_style.css" />
+    <link rel="stylesheet" href="CSS/skillSwap_style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -123,15 +123,7 @@
       <p class="footer-copy">© SkillSwap 2025</p>
     </footer>
 
-    <script>
-      let total = 0;
-      let amounts = document.getElementsByClassName("t-amount");
-
-      for (let i = 0; i < amounts.length; i++) {
-        total += parseInt(amounts[i].innerText);
-      }
-
-      document.getElementById("totalAmount").innerText = total;
-    </script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="JS/main.js"></script>
   </body>
 </html>
