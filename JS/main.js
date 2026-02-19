@@ -392,7 +392,7 @@ $(document).ready(function () {
       $('#loginForm .auth-btn').first().after(msg);
 
       setTimeout(function () {
-        window.location.href = 'index.html';
+        window.location.href = '../index.html';
       }, 2000);
     });
 
